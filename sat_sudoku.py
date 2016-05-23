@@ -310,6 +310,8 @@ def main():
 
     print '\nGenerating sudoku clauses...'
     sudoku_clauses = get_sudoku_clauses()
+    print 'Number of generated clauses: {}'.format(len(sudoku_clauses))
+
     print '\nGenerating solution:'
     sudoku_solution = solve_sudoku(sudoku_problem, sudoku_clauses)
 
