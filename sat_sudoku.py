@@ -296,7 +296,7 @@ def solve_sudoku(sudoku_grid, sudoku_clauses):
 
 def main():
     # Sudoku problem on Weber paper
-    print 'Sudoku problem: '
+    print('Sudoku problem: ')
     sudoku_problem = [[0, 2, 0, 0, 0, 0, 0, 0, 0],
                       [0, 0, 0, 6, 0, 0, 0, 0, 3],
                       [0, 7, 4, 0, 8, 0, 0, 0, 0],
@@ -308,11 +308,11 @@ def main():
                       [0, 0, 0, 0, 0, 0, 0, 4, 0]]
     pprint(sudoku_problem)
 
-    print '\nGenerating sudoku clauses...'
+    print('\nGenerating sudoku clauses...')
     sudoku_clauses = get_sudoku_clauses()
-    print 'Number of generated clauses: {}'.format(len(sudoku_clauses))
+    print('Number of generated clauses: {}'.format(len(sudoku_clauses)))
 
-    print '\nGenerating solution:'
+    print('\nGenerating solution:')
     sudoku_solution = solve_sudoku(sudoku_problem, sudoku_clauses)
 
     assert [[1, 2, 6, 4, 3, 7, 9, 5, 8],
