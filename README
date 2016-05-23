@@ -1,0 +1,8 @@
+In order to run the application, first install the package pycosat. The
+following command can be used to do that:
+
+$ pip install pycosat
+
+With this package installed, just run the file as any python script:
+
+$ python sat_sudoku.py
